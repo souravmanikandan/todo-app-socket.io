@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="max-w-5xl mx-auto mt-28 text-3xl p-5">
+        <h1 class="mb-12 text-5xl font-bold">My Tdo List</h1>
+        <div  class="flex gap-2 sm:gap-10 flex-wrap">
+            <input type="text" id="todoItemInput" class="border rounded-md p-2 w-full max-w-lg">
+            <button id="addTdo" class="w-full sm:w-auto border bg-gray-50 rounded-md p-2 px-6">Add</button>
+            <ul class="mt-12" id="todoList"></ul>
+        </div>
+    </section>
+    
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
